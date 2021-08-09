@@ -36,8 +36,28 @@ article.header {
   background-color: white;
   border-radius: 0.5em;
   padding: 30px;
-  margin-bottom: 2em;
+
   box-shadow: 5px 5px 10px 0px hsl(229, 6%, 66%);
+  overflow: auto;
+  max-width: 500px;
+  margin: 2em auto;
+}
+.container article::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container article h1 {
+  margin-bottom: 0.5em;
+}
+.container article p {
+  line-height: 2em;
+}
+
+.container article img {
+  float: right;
+  margin-top: 5em;
 }
 
 .container article:nth-of-type(1) {
